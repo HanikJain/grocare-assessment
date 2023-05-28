@@ -29,7 +29,8 @@ export default function Posts() {
         <>
             <div style={{ height: "1px", width: "100" }} ref={scrollDiv}></div>
             {!isError.error && <div className={styles.gridLayout}>
-                {posts.length > 0 ? posts.map(renderPosts) : "No post found"}
+                {!isLoading && (posts.length > 0 ? posts.map(renderPosts) : "No post found")}
+                {isLoading && "Loading..."}
             </div>}
             {isError.error && <div style={{ display: 'flex', justifyContent: "center", marginTop: "1rem" }}>
                 {isError.message}

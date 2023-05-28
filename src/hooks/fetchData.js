@@ -13,6 +13,7 @@ export default function useFetchData() {
   useEffect(() => {
 
     async function getData(pageNumber){
+        setIsLoading(true);
         const pageNumberReq = pageNumber - 1;
 
         const url = "https://internship-service.onrender.com/videos?page=" + pageNumberReq
