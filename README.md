@@ -4,7 +4,7 @@ This project is an assessment for gro.care. It is built using ReactJs.
 
 ## Live URL
 
-https://ed-yoda-assessment.vercel.app/
+https://grocare-assessment.vercel.app/
 
 ## Features
 
