@@ -1,0 +1,25 @@
+.videoSidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    row-gap: 2rem;
+
+    position: absolute;
+    right: 10px;
+    top: 50%;
+
+    height: auto;
+    width: auto;
+    background-color: transparent;
+
+    color: #fff;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 0.5rem;
+}

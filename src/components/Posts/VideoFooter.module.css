@@ -1,0 +1,80 @@
+.hero {
+    position: absolute;
+    /* background-color: transparent; */
+    opacity: 0.8;
+    margin: 2rem auto 0;
+    bottom: 0;
+    left: 0;
+
+    height: auto;
+    width: 100%;
+    padding: 1rem;
+    padding-bottom: 50px;
+
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 0.7rem;
+    flex-direction: column;
+
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+
+
+
+}
+
+.container1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.container1 img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.creator {
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+    width: 100%;
+    
+}
+
+.description {
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: white;
+}
+
+@keyframes scalein {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.hidedescription {
+    display: grid;
+    grid-template-rows:  0fr;
+    transition: grid-template-rows 0.3s ease-in-out;
+}
+
+.showdescription {
+    display: grid;
+    grid-template-rows:  1fr;
+    transition: grid-template-rows 0.3s ease-in-out;
+}
+

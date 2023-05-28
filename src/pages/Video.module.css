@@ -1,0 +1,20 @@
+.container {
+    position: relative;
+    height: 99vh;
+    height: 99dvh;
+    overflow-y: scroll;
+    
+    transition: height 0.3s ease-in-out;
+
+    scroll-snap-type: y mandatory;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+    
+}
+
+.container {
+    -ms-overflow-style:none;
+    scrollbar-width: none;
+}
